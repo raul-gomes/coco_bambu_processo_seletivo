@@ -1,6 +1,6 @@
 ### Desafio 2
 
-1. Por que armazenar as respostas das APIs?
+#### 1. Por que armazenar as respostas das APIs?
 
 Armazenar as respostas das APIs oferece várias vantagens:
 
@@ -10,12 +10,11 @@ Armazenar as respostas das APIs oferece várias vantagens:
 - <b>Desempenho otimizado:</b> Reduz a necessidade de requisições repetidas para APIs, economizando tempo e recursos.
 - <b>Flexibilidade analítica:</b> Facilita o uso dos dados em pipelines de ETL, análises preditivas ou relatórios de BI.
 
-2. Como você armazenaria os dados?
+#### 2. Como você armazenaria os dados?
 
 Para armazenar os dados no data lake, utilizaria uma estrutura de pastas organizada por critérios que otimizem buscas e mantenham a escalabilidade. Uma possível estrutura seria:
 
 ```shell
-$tree
 /data-lake/
   └── restaurant-chain/
       ├── fiscal-invoice/
@@ -55,16 +54,16 @@ Justificativa:
 - Usar partições (por exemplo, year, month, day) melhora o desempenho de consultas em ferramentas como Spark ou Hive.
 - O uso de JSON mantém o formato original da resposta da API, preservando flexibilidade para transformações futuras.
 
-3. Impacto de mudanças na estrutura da resposta da API
+#### 3. Impacto de mudanças na estrutura da resposta da API
 
-A alteração de guestChecks.taxes para guestChecks.taxation tem os seguintes impactos:
+A alteração de <i>guestChecks.taxes</i> para <i>guestChecks.taxation</i> tem os seguintes impactos:
 
 <b>Implicações Técnicas:</b>
 
-- ETL/Data Pipeline: Se o pipeline atual espera guestChecks.taxes, ele falhará ao processar guestChecks.taxation devido à mudança de nomenclatura.
-- Scripts de Análise: Consultas ou transformações que dependem da chave taxes precisarão ser ajustadas.
-- Documentação: A mudança exige atualização nas definições e contratos da API.
-- Inconsistência Temporal: Dados antigos no data lake utilizariam taxes, enquanto dados novos teriam taxation.
+- <b>ETL/Data Pipeline:</b> Se o pipeline atual espera guestChecks.taxes, ele falhará ao processar guestChecks.taxation devido à mudança de nomenclatura.
+- <b>Scripts de Análise:</b> Consultas ou transformações que dependem da chave taxes precisarão ser ajustadas.
+- <b>Documentação:</b> A mudança exige atualização nas definições e contratos da API.
+- <b>Inconsistência Temporal:</b> Dados antigos no data lake utilizariam taxes, enquanto dados novos teriam taxation.
 
 <b>Soluções:</b>
 

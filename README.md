@@ -25,7 +25,7 @@ Este exemplo corresponde a um determinado pedido <i>(guestCheckId)</i> com um ú
     - Não hesite em pedir esclarecimentos ou, se preferir, faça uma suposição e siga com ela.
 
 
-### DESAFIO 2
+### DESAFIO 2 
 #### Contexto:
 Nossa equipe de inteligência de negócios precisa analisar a receita de todas as lojas de uma rede de restaurantes. Essas informações podem ser obtidas por meio de 5 endpoints de API.
 
@@ -46,11 +46,11 @@ Nossa equipe de inteligência de negócios precisa analisar a receita de todas a
 - busDt corresponde à data de operação.
 
 <b>Tarefa:</b> Esta é uma continuação do primeiro desafio. Você deve armazenar os dados das respostas das APIs (JSON) no nosso data lake.
-1. Por que armazenar as respostas das APIs?
+1. Por que armazenar as respostas das APIs? (Se encontra no arquivo <b>readme.md</b> dentro da pasta <b>challenge_two/</b>)
 <br>
-2. Como você armazenaria os dados? Crie uma estrutura de pastas capaz de armazenar as respostas da API. Ela deve permitir manipulaçõe, verificações, buscas e pesquisas rápidas.
+2. Como você armazenaria os dados? Crie uma estrutura de pastas capaz de armazenar as respostas da API. Ela deve permitir manipulaçõe, verificações, buscas e pesquisas rápidas. (Se encontra no arquivo <b>readme.md</b> dentro da pasta <b>challenge_two/</b>)
 <br>
-3. Considere que a resposta do endpoint getGuestChecks foi alterada, por exemplo, <i>guestChecks.taxes</i> foi renomeado para <i>guestChecks.taxation</i>. O que isso implicaria?
+3. Considere que a resposta do endpoint getGuestChecks foi alterada, por exemplo, <i>guestChecks.taxes</i> foi renomeado para <i>guestChecks.taxation</i>. O que isso implicaria? (Se encontra no arquivo <b>readme.md</b> dentro da pasta <b>challenge_two/</b>)
 
 <b>Recomendações:</b>
 - Faça um esboço antes de começar.
