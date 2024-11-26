@@ -102,6 +102,10 @@ class MenuItem(Base):
     # Relação inversa
     detail_line = relationship("DetailLine", back_populates="menu_item")
 
-# Configuração do banco de dados
-engine = create_engine('sqlite:///restaurant.db')
+# Exemplo de engine e criação do banco de dados
+engine = create_engine("sqlite:///restaurant.db")
 Base.metadata.create_all(engine)
+
+# Sessão para interações
+Session = sessionmaker(bind=engine)
+session = Session()
